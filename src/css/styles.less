@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+    // display: flex;
+    // flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0 30px 0;
+
+    .avatar {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-image: url(/img/avatar.png);
+        background-size: cover;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    h1 {
+        display: inline-block;
+        font-weight: 100;
+        font-family: Courier New, Courier, monospace;
+        font-size: 40px;
+        line-height: 28px;
+        margin: 10px 0 0 0;
+        color: #73a5b9;
+        text-shadow: 1px 1px 2px black;
+    }
+}
+
+section {
+    //height: 100%;
+    margin: 20px 10px 20px 10px;
+
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            flex: 1 1 auto;
+            width: 220px;
+            max-width: 340px;
+            height: 220px;
+            margin: 6px;
+
+            a {
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: 50% 50%;
+                border-radius: 2px;
+                position: relative;
+                cursor: pointer;
+
+                // figcaption {
+                //     position: absolute;
+                //     bottom: 0;
+                //     text-align: center;
+                //     width: 100%;
+                // }
+            }
+        }
+    }
+}
+
+main {
+    min-height: 100vh;
+    margin: 40px 0 80px 0;
+
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            text-align: center;
+            margin: 20px;
+            height: 100vh;
+            padding: 20px 10px 20px 10px;
+
+            a {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    padding: 10px 0 10px 0;
+    background-color: black;
+    text-align: center;
+}
+
